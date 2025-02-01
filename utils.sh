@@ -60,11 +60,11 @@ asdf_configure() {
     "python"
   )
 
-  #for language in "${asdf_languages[@]}"; do
-  #  asdf plugin-add $language
-  #  asdf install $language latest
-  #  asdf global $language latest
-  #done
+  for language in "${asdf_languages[@]}"; do
+    asdf plugin-add $language
+    asdf install $language latest
+    asdf global $language latest
+  done
 }
 
 # Clones repositories
